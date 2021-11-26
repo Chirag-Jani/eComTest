@@ -1,0 +1,16 @@
+<div class="container" *ngFor="let product of cartProduct">
+  <div class="card m-2" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">{{ product.name }}</h5>
+      <p class="card-text">
+        {{ product.desc }}
+      </p>
+      <h3>{{ product.price }}</h3>
+      <!-- <input
+        type="submit"
+        value="Add to Cart"
+        (click)="removeFrom(product.name, product.desc, product.price)"
+      /> -->
+    </div>
+  </div>
+</div>
